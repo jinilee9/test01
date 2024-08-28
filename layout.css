@@ -275,14 +275,31 @@ section {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(0deg, #5B75B4 0%, #3D538A 100%);
+    border-image-slice: 1;
+    padding-bottom: 23px; 
 }
 .box ul{
     display: flex;
     align-items: center;
+    padding-top: 32px;
 }
 .box ul li{
     width: calc(100% / 3);
     text-align: center;
+}
+.box ul li+li{
+    margin-left: 22px;
+}
+.box ul div {
+    margin-top: 4px;
+    border: 1px solid #354971;
+    background: linear-gradient(314.28deg, #313338 0%, #4C65A0 83%);
+    padding: 16px 14px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 6px;
 }
 .box ul span{
     color: #A5B6EE;
@@ -305,7 +322,7 @@ section {
 .btn-warp button+button{
     margin-left: 12px;
 }
-.btn-wrap .start::before{
+.btn-wrap bo.start::before{
     content: '';
     display: inline-block;
     background: url(./img/icon-start.svg) no-repeat;
